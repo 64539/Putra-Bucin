@@ -101,8 +101,8 @@ export default function EnvelopeLetter() {
             <span className="text-xs font-serif font-bold text-rose-900 tracking-wide">
               Dear {LETTER_CONTENT.recipient}
             </span>
-            <span className="text-[10px] text-rose-800/60 font-mono">
-              22.08.2025
+            <span className="text-[10px] text-rose-800/70 font-medium flex items-center gap-1">
+              🎂 14th Birthday
             </span>
           </div>
 

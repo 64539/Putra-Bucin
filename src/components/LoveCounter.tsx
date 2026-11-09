@@ -101,8 +101,8 @@ export default function LoveCounter() {
 
           {/* Subtext Quote */}
           <div className="mt-4 pt-3 border-t border-rose-500/20 flex items-center justify-center gap-1.5 text-xs text-rose-300/80 italic font-serif">
-            <Sparkles className="w-3.5 h-3.5 text-rose-400" />
-            <span>&ldquo;Dan cinta ini akan terus bertambah selamanya.&rdquo;</span>
+            <Sparkles className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+            <span>&ldquo;Dan cinta ini akan terus bertambah selamanya, dan selamat ulang tahun yang ke-14 cintaku.&rdquo;</span>
           </div>
         </div>
       </motion.div>

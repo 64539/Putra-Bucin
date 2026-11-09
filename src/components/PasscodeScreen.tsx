@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, Unlock, Delete, Heart, Sparkles, HelpCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { CORRECT_PIN } from '@/data/romanticData';
+import { VALID_PINS } from '@/data/romanticData';
 
 interface PasscodeScreenProps {
   onUnlock: () => void;
@@ -64,7 +64,7 @@ export default function PasscodeScreen({ onUnlock }: PasscodeScreenProps) {
   };
 
   const validatePin = (inputPin: string) => {
-    if (inputPin === CORRECT_PIN) {
+    if (VALID_PINS.includes(inputPin)) {
       setIsSuccess(true);
       playSound(784, 'sine', 0.2); // G5 note
       setTimeout(() => playSound(1046, 'sine', 0.35), 150); // C6 note
@@ -167,7 +167,7 @@ export default function PasscodeScreen({ onUnlock }: PasscodeScreenProps) {
         </h1>
 
         <p className="text-xs text-rose-300/70 mt-1 text-center font-sans">
-          Masukkan 6-digit passcode rahasia cinta kita
+          Masukkan 6-digit passcode rahasia cinta kita (Tanggal Jadian atau Hari Lahirmu)
         </p>
 
         {/* 6 Passcode Indicator Dots with shake animation */}
@@ -229,7 +229,7 @@ export default function PasscodeScreen({ onUnlock }: PasscodeScreenProps) {
                 exit={{ opacity: 0 }}
                 className="text-xs text-rose-300 font-medium bg-rose-950/80 px-3 py-1 rounded-full border border-rose-500/30"
               >
-                Ups, tanggal jadian kita jangan lupa ya sayang 🥺
+                Ups, tanggal jadian atau ulang tahunmu jangan lupa ya sayang 🥺
               </motion.span>
             )}
             {isSuccess && (
@@ -307,7 +307,7 @@ export default function PasscodeScreen({ onUnlock }: PasscodeScreenProps) {
           onClick={() => setShowHintModal(true)}
           className="text-xs text-rose-300/60 hover:text-rose-200 underline decoration-rose-500/30 underline-offset-4 transition-colors"
         >
-          Lupa tanggal jadian kita? Klik di sini
+          Lupa tanggal jadian atau ulang tahunmu? Klik di sini
         </button>
       </div>
 
@@ -333,14 +333,21 @@ export default function PasscodeScreen({ onUnlock }: PasscodeScreenProps) {
                 Petunjuk Sandi Rahasia
               </h3>
               <p className="text-xs text-rose-200/80 leading-relaxed mb-4">
-                Sandi ini adalah tanggal paling bersejarah untuk kita:
+                Kamu bisa memasukkan salah satu dari dua tanggal paling istimewa:
                 <br />
-                <span className="text-rose-300 font-semibold mt-1 inline-block">
-                  Hari Jadian Kita: 22 Agustus 2025
+                <span className="text-rose-300 font-semibold mt-2 inline-block">
+                  1. Hari Jadian Kita: 22 Agustus 2025
                 </span>
                 <br />
-                <span className="text-xs text-rose-400/90 font-mono mt-1 block">
-                  Format: (22-08-25) &rarr; 220825
+                <span className="text-xs text-rose-400/90 font-mono block">
+                  &rarr; 220825
+                </span>
+                <span className="text-rose-300 font-semibold mt-2 inline-block">
+                  2. Hari Lahir Fathiyyah: 02 Mei 2013 🎂
+                </span>
+                <br />
+                <span className="text-xs text-rose-400/90 font-mono block">
+                  &rarr; 020513
                 </span>
               </p>
               <button

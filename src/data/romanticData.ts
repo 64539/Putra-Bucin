@@ -2,16 +2,18 @@ import { Milestone, PolaroidPhoto, LoveQuote } from '@/types';
 
 export const ANNIVERSARY_DATE = '2025-08-22T00:00:00+07:00';
 export const CORRECT_PIN = '220825';
+export const BIRTHDAY_PIN = '020513';
+export const VALID_PINS = ['220825', '020513'];
 
 export const LETTER_CONTENT = {
   recipient: 'Fathiyyah ❤️',
-  date: '22 Agustus 2025 — Selamanya',
+  date: 'Spesial Ulang Tahun ke-14 & Anniversary',
   paragraphs: [
-    'Hai manis, terima kasih sudah hadir di hidupku dan membawakan warna-warna indah yang sebelumnya tak pernah kukenal.',
-    'Setiap hari bersamamu terasa seperti bab baru dari buku cerita terbaik yang tak pernah ingin kuselesaikan. Tawamu adalah melodi paling menenangkan, dan caramu tersenyum selalu berhasil meluluhkan lelahku.',
-    'Di tanggal 22 Agustus 2025, aku berjanji dalam hati untuk selalu menjaga hatimu, mendengarkan celotehmu, dan menjadi rumah paling nyaman untuk tempatmu pulang.',
-    'Terima kasih sudah memilihku untuk menjadi teman jalanmu, pendengar setiainu, dan orang yang paling mencintaimu di dunia ini.',
-    'Tetaplah jadi Fathiyyah yang kukenal—yang lucu, penuh perhatian, dan selalu menggemaskan di mataku. I love you more than words could ever describe.'
+    'Selamat ulang tahun yang ke-14 untuk Fathiyyah tersayang! 🎂🎉 Selamat bertambah usia gadis manisku yang lahir pada 2 Mei 2013. Semoga di usiamu yang ke-14 ini, harimu selalu dipenuhi kebahagiaan, tawa yang tak pernah pudar, dan segala hal baik selalu menyertaimu.',
+    'Terima kasih sudah hadir di hidupku dan membawakan warna-warna indah yang sebelumnya tak pernah kukenal. Bersyukur sekali rasanya bisa merayakan momen spesial ini bersamamu.',
+    'Sejak hari jadian kita di tanggal 22 Agustus 2025, setiap hari bersamamu terasa seperti anugerah terindah. Menjadi teman jalanmu, pendengar ceritamu, dan orang yang selalu ada di sampingmu adalah hal yang paling membahagiakan.',
+    'Tawamu selalu jadi melodi paling menenangkan, dan senyummu selalu berhasil membuat duniaku lebih cerah. Di hari ulang tahunmu yang ke-14 ini, doaku semoga kita terus saling menjaga, saling menguatkan, dan tumbuh bersama.',
+    'Tetaplah jadi Fathiyyah yang kukenal—yang ceria, baik hati, dan selalu menggemaskan. Happy 14th Birthday cintaku! 🎂💕 I love you more than words could ever describe.'
   ],
   closing: 'Dengan segenap cintaku,',
   sender: 'Putra 🌹'

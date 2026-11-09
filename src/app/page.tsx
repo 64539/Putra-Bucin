@@ -65,7 +65,7 @@ export default function Home() {
                     <span className="text-rose-300 font-script text-base">Fathiyyah</span>
                   </h1>
                   <p className="text-[10px] text-rose-400/70 font-mono -mt-0.5">
-                    Anniversary: 22.08.2025
+                    Anniversary 22.08.2025 &bull; 14th Birthday 🎂
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-950/50 border border-rose-500/30 text-rose-300 text-xs font-medium mb-3">
                 <Sparkles className="w-3.5 h-3.5 text-rose-400" />
-                <span>Happy Anniversary, Cantikku!</span>
+                <span>Happy Anniversary &amp; 14th Birthday, Cantikku! 🎂</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-200 via-pink-100 to-rose-300">
                 Untuk Fathiyyah
